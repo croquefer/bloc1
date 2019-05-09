@@ -1,0 +1,188 @@
+
+
+/*on met des bordures dans un premier temps au moins, pour bien visualiser les blocs*/
+/*ce qu'on fait dans un premier temps : on place les blocs*/
+body
+{
+    background-color:skyblue;
+}
+header
+{
+    position:absolute;
+    top:5%;
+    left:30%;
+    height:8%;
+    width:65%;
+    font-size:15px;
+    border:3px green solid;
+    
+    font-size:xx-large;
+    font-family:"comic sans ms";
+    text-align:center;
+
+}
+ article
+{
+    position:absolute;
+    top:20%;
+    left:30%;
+    bottom:20%;
+    right:5%;
+    border:1px #feff3b solid;
+    background-color:ghostwhite;
+
+
+}
+
+
+div
+{
+    position:absolute;
+    top:5%;
+    width:20%;
+    left:5%;
+    height:20%;
+    border:2px #feff3b solid;
+    overflow:hidden;/*ce qui dépasse est caché*/
+    
+}
+div img {
+   width: 100%;
+}
+aside
+{
+    position:absolute;
+    top:30%;
+    left:5%;
+    height:50%;
+    width:20%;
+    border:3px #feff3b dotted;
+    text-align:center;
+    color:black;
+}
+footer
+{
+    position:absolute;
+    bottom:0;
+    height:10%;
+    width:100%;
+    left:0;
+    border:1px green dashed;
+    color:#91bc0a;
+    text-align:center;
+
+}
+ a
+{
+    color:#91bc0a;
+}
+
+.btn-group .button {
+  background-color: gray; /* Green */
+  border: 1px solid green;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  width: 150px;
+  display: block;
+}
+
+.btn-group .button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: rebeccapurple;
+}
+
+.btn-group{
+    top:15%;
+    width:auto;
+    margin-left:20%;
+}
+.gauche
+{
+    position:absolute;
+    left:2%;
+    width:43%;
+    top:5%;
+    height:80%;
+     background-image:url(images/like.png);
+    background-size:cover;
+    color: darkviolet;
+    transform-origin: 50% 50%;
+     -webkit-animation: rotating 20s linear infinite;
+    
+}
+
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+@moz-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.gauche:hover{
+animation-play-state: paused;
+}
+
+
+.droite
+{
+    position:absolute;
+    right:2%;
+    width:50%;
+    top:5%;
+    height:80%;
+    border:1px black solid;
+    background-color:lightgoldenrodyellow;
+    overflow:auto;
+    font-size: 15px;
+     -webkit-animation-name: chgt-couleur; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 5s;
+    -moz-animation-name: chgt-couleur; /* Mozilla */
+    -moz-animation-duration: 5s;
+    animation-name: chgt-couleur;
+    animation-duration: 5s;
+
+}
+
+/*Pour Chrome, Safari et Opéra*/
+@-webkit-keyframes chgt-couleur {
+    from {background-color: red;}
+    to {background-color: darkblue;}
+}
+
+/*Pour Mozilla*/
+@moz-keyframes chgt-couleur{
+    from {background-color: red;}
+    to {background-color: darkblue;}
+}
+
+/*Syntaxe standard*/
+@keyframes chgt-couleur {
+    from {background-color: red;}
+    to {background-color: darkblue;}
+}
